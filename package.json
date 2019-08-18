@@ -1,5 +1,5 @@
 {
-  "name": "Room",
+  "name": "room",
   "version": "1.0.0",
   "description": "Room is a Chat App",
   "author": "snowlong",
@@ -10,6 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
   "dependencies": {
