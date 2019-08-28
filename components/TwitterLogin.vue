@@ -28,7 +28,7 @@ export default {
   methods: {
     twitterLogin() {
       const provider = new firebase.auth.TwitterAuthProvider()
-      firebase.auth().signInWithPopup(provider)
+      firebase.auth().signInWithRedirect(provider)
     },
     logout() {
       firebase.auth().signOut()
