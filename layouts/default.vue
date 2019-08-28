@@ -1,8 +1,25 @@
 <template>
   <div>
+    <header-design />
+    <contents-design />
+    <rooms-design />
     <nuxt />
   </div>
 </template>
+
+<script>
+import HeaderDesign from '@/components/HeaderDesign.vue'
+import ContentsDesign from '@/components/ContentsDesign.vue'
+import RoomsDesign from '@/components/RoomsDesign.vue'
+
+export default {
+  components: {
+    HeaderDesign,
+    ContentsDesign,
+    RoomsDesign
+  }
+}
+</script>
 
 <style>
 html {
