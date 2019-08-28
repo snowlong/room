@@ -1,6 +1,7 @@
 <template>
   <div>
     <header-design />
+    <twitter-login />
     <contents-design />
     <rooms-design />
     <nuxt />
@@ -9,12 +10,14 @@
 
 <script>
 import HeaderDesign from '@/components/HeaderDesign.vue'
+import TwitterLogin from '@/components/TwitterLogin.vue'
 import ContentsDesign from '@/components/ContentsDesign.vue'
 import RoomsDesign from '@/components/RoomsDesign.vue'
 
 export default {
   components: {
     HeaderDesign,
+    TwitterLogin,
     ContentsDesign,
     RoomsDesign
   }
