@@ -8,20 +8,21 @@
         Room is a Chat App
       </h2>
       <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <twitter-login />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import TwitterLogin from '@/components/TwitterLogin.vue'
+
+export default {
+  components: {
+    TwitterLogin
+  }
+}
+</script>
 
 <style>
 /* Sample `apply` at-rules with Tailwind CSS
