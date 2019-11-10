@@ -27,15 +27,20 @@
         <section
           v-for="{ key, name, image, message } in chat"
           :key="key"
-          class="item"
+          class="item flex flex-row py-4"
         >
           <div class="item-image">
-            <img :src="image" width="40" height="40" />
+            <img
+              :src="image"
+              class="h-12 w-12 md:h-16 md:w-16 rounded-full ml-3"
+              width="40"
+              height="40"
+            />
           </div>
-          <div class="item-detail">
+          <div class="item-detail px-2">
             <div class="item-name">{{ name }}</div>
             <div class="item-message">
-              <nl2br tag="div" :text="message" />
+              <div>{{ message }}</div>
             </div>
           </div>
         </section>
